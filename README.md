@@ -10,3 +10,5 @@ Experience the power of the Mercury Developer Network with us!
 
 Warm Regards,
 Matt Ozvat, Director of Developer Integrations, Mercury
+
+[![Analytics](https://ga-beacon.appspot.com/UA-1785046-24/Shuttle.ObjC/readme?pixel)](https://github.com/MercuryPay)
