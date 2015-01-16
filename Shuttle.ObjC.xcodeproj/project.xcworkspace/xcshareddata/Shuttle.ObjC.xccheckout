@@ -10,31 +10,31 @@
 	<string>Shuttle.ObjC</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>76AEB91D-6106-4E29-9348-5F0B08B53A0F</key>
-		<string>https://github.com/MercuryPay/Shuttle.ObjC.git</string>
+		<key>25D83185E82047D4D5985F2FC5E92D7E78F0A4DE</key>
+		<string>https://github.com/MercuryPay/IDTech.Shuttle.ObjC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Shuttle.ObjC.xcodeproj/project.xcworkspace</string>
+	<string>Shuttle.ObjC.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>76AEB91D-6106-4E29-9348-5F0B08B53A0F</key>
+		<key>25D83185E82047D4D5985F2FC5E92D7E78F0A4DE</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MercuryPay/Shuttle.ObjC.git</string>
+	<string>https://github.com/MercuryPay/IDTech.Shuttle.ObjC.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>76AEB91D-6106-4E29-9348-5F0B08B53A0F</string>
+	<string>25D83185E82047D4D5985F2FC5E92D7E78F0A4DE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>76AEB91D-6106-4E29-9348-5F0B08B53A0F</string>
+			<string>25D83185E82047D4D5985F2FC5E92D7E78F0A4DE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Shuttle.ObjC</string>
+			<string>IDTech.Shuttle.ObjC</string>
 		</dict>
 	</array>
 </dict>

@@ -24,9 +24,7 @@
 {
     [super viewDidLoad];
 	
-    self.magTek = [[MTSCRA alloc] init];
-    [self.magTek listenForEvents:(TRANS_EVENT_OK|TRANS_EVENT_START|TRANS_EVENT_ERROR)];
-    [self.magTek setDeviceProtocolString:(@"com.magtek.idynamo")];
+
     
     // Enable info level NSLogs inside SDK
     // Here we turn on before initializing SDK object so the act of initializing is logged
@@ -49,8 +47,7 @@
     // through iTunes file sharing. See UIFileSharingEnabled in iOS doc.
     [self.uniMag setWavePath: [NSHomeDirectory() stringByAppendingPathComponent: @"/Documents/audio.caf"]];
     
-    self.simSwipeuDynamoSwitch.on = false;
-    self.simSwipeiDynamoSwitch.on = false;
+
     self.simSwipeUniMagIISwitch.on = false;
     
 }
@@ -62,15 +59,12 @@
 }
 
 - (IBAction)simSwipeuDynamoButtonPressed:(id)sender {
-    [self.simSwipeuDynamoSwitch setOn:!self.simSwipeuDynamoSwitch.on animated:true];
-    [self.simSwipeiDynamoSwitch setOn:false animated:true];
-    [self.simSwipeUniMagIISwitch setOn:false animated:true];
+       [self.simSwipeUniMagIISwitch setOn:false animated:true];
     
     [self uniMag_deactivate];
     [self magTek_deactivate];
     
     if (self.simSwipeuDynamoSwitch.on) {
-        [self magtek_activateWithDeviceType:MAGTEKAUDIOREADER];
     }
 }
 
@@ -82,7 +76,6 @@
     [self magTek_deactivate];
     
     if (self.simSwipeuDynamoSwitch.on) {
-        [self magtek_activateWithDeviceType:MAGTEKAUDIOREADER];
     }
 }
 
@@ -95,7 +88,6 @@
     [self magTek_deactivate];
     
     if (self.simSwipeiDynamoSwitch.on) {
-        [self magtek_activateWithDeviceType:MAGTEKIDYNAMO];
     }
 }
 
@@ -107,7 +99,6 @@
     [self magTek_deactivate];
     
     if (self.simSwipeiDynamoSwitch.on) {
-        [self magtek_activateWithDeviceType:MAGTEKIDYNAMO];
     }
 }
 
@@ -142,8 +133,6 @@
 
 - (void)magtek_activateWithDeviceType:(UInt32)deviceType
 {
-    [self.magTek setDeviceType:deviceType];
-    [self.magTek openDevice];
     [self magtek_registerObservers:true];
     [self displayDeviceStatus];
 }
@@ -151,11 +140,6 @@
 -(void)magTek_deactivate {
     [self magtek_registerObservers:false];
     [self disconnected];
-    
-    if (self.magTek != NULL && self.magTek.isDeviceOpened)
-    {
-        [self.magTek closeDevice];
-    }
     
 }
 
@@ -183,27 +167,6 @@
     [self performSelectorOnMainThread:@selector(onDataEvent:)
                            withObject:status
                         waitUntilDone:NO];
-}
-
-- (void)onDataEvent:(id)status
-{
-    switch ([status intValue]) {
-        case TRANS_STATUS_OK:
-            NSLog(@"TRANS_STATUS_OK");
-            self.encryptedSwipeData = [[EncryptedSwipeData alloc] init];
-            self.encryptedSwipeData.track1Masked = self.magTek.getTrack1Masked;
-            self.encryptedSwipeData.track2Masked = self.magTek.getTrack2Masked;
-            self.encryptedSwipeData.track1Encrypted = self.magTek.getTrack1;
-            self.encryptedSwipeData.track2Encrypted = self.magTek.getTrack2;
-            self.encryptedSwipeData.ksn = self.magTek.getKSN;
-            [self determineNextStep];
-            break;
-        case TRANS_STATUS_ERROR:
-            NSLog(@"TRANS_STATUS_ERROR");
-            break;
-        default:
-            break;
-    }
 }
 
 - (void)devConnStatusChange
@@ -664,19 +627,13 @@
 
 - (void)displayDeviceStatus
 {
-    BOOL isMagTekDeviceConnected = [self.magTek isDeviceConnected];
-    BOOL isMagTekDeviceOpen = [self.magTek isDeviceOpened];
     BOOL isUniMagReaderAttached = [self.uniMag isReaderAttached];
     BOOL isUniMagReaderConnected = self.uniMag.getConnectionStatus;
     
-    if ((self.magTek && isMagTekDeviceConnected && isMagTekDeviceOpen)
-        || (self.uniMag && isUniMagReaderAttached && isUniMagReaderConnected)){
-        [self connected];
-    }
-    else {
+
         [self disconnected];
     }
-}
+
 
 - (int) encryptedLengthFromMasked: (int)maskedLength {
     int value = maskedLength;
@@ -720,10 +677,8 @@
         [self performSegueWithIdentifier:@"segueSwipeResults" sender:self];
     }
     else if (self.simSwipeiDynamoSwitch.on) {
-        [self magtek_activateWithDeviceType: MAGTEKIDYNAMO];
     }
     else if(self.simSwipeuDynamoSwitch.on) {
-        [self magtek_activateWithDeviceType: MAGTEKAUDIOREADER];
     }
     else if (self.simSwipeUniMagIISwitch.on) {
         [self uniMag_activate];

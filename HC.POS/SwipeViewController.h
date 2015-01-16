@@ -9,13 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "EncryptedSwipeData.h"
-#import "MTSCRA.h"
 #import "uniMag.h"
 
 @interface SwipeViewController : UIViewController 
 
 @property (nonatomic, weak) IBOutlet UIImageView *ccSwipe;
-@property (strong, nonatomic) MTSCRA *magTek;
 @property (strong, nonatomic) uniMag *uniMag;
 ;
 
