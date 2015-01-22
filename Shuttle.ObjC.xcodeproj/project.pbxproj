@@ -25,7 +25,6 @@
 		4575F2A017F22EA0009C9638 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F29F17F22EA0009C9638 /* AudioToolbox.framework */; };
 		4575F2A217F22EA9009C9638 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F2A117F22EA9009C9638 /* AVFoundation.framework */; };
 		4575F2A417F22EBD009C9638 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F2A317F22EBD009C9638 /* MediaPlayer.framework */; };
-		4575F2A817F2412F009C9638 /* IDTECH_UniMag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F2A617F2412F009C9638 /* IDTECH_UniMag.a */; };
 		4575F2AB17F288F2009C9638 /* EncryptedSwipeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4575F2AA17F288F2009C9638 /* EncryptedSwipeData.m */; };
 		458BA7FC17F51BD100F4313C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458BA7FB17F51BD100F4313C /* CoreMedia.framework */; };
 		458BA7FE17F51BE300F4313C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458BA7FD17F51BE300F4313C /* CoreVideo.framework */; };
@@ -83,6 +82,7 @@
 		C28C4ACD17EA6682007F8375 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C28C4ACC17EA6682007F8375 /* SwipeViewController.m */; };
 		C28C4AD217EB3D6B007F8375 /* SwipeInitResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C28C4AD117EB3D6B007F8375 /* SwipeInitResultsViewController.m */; };
 		C290FBC917F48906001DC5E1 /* MercuryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C290FBC817F48906001DC5E1 /* MercuryHelper.m */; };
+		C2A611831A71B052002A4AD0 /* IDTECH_UniMag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A611811A71B052002A4AD0 /* IDTECH_UniMag.a */; };
 		C2ABB11F17F3387D00B1C3C5 /* SwipeStep1TutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ABB11E17F3387D00B1C3C5 /* SwipeStep1TutViewController.m */; };
 		C2ABB12217F33E4D00B1C3C5 /* SwipeVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ABB12117F33E4D00B1C3C5 /* SwipeVerifyViewController.m */; };
 		C2ABB12A17F3450500B1C3C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ABB12917F3450500B1C3C5 /* MobileCoreServices.framework */; };
@@ -109,8 +109,6 @@
 		4575F29F17F22EA0009C9638 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4575F2A117F22EA9009C9638 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4575F2A317F22EBD009C9638 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		4575F2A617F2412F009C9638 /* IDTECH_UniMag.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = IDTECH_UniMag.a; sourceTree = "<group>"; };
-		4575F2A717F2412F009C9638 /* uniMag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uniMag.h; sourceTree = "<group>"; };
 		4575F2A917F288F2009C9638 /* EncryptedSwipeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptedSwipeData.h; sourceTree = "<group>"; };
 		4575F2AA17F288F2009C9638 /* EncryptedSwipeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptedSwipeData.m; sourceTree = "<group>"; };
 		458BA7FB17F51BD100F4313C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -234,6 +232,8 @@
 		C28C4AD117EB3D6B007F8375 /* SwipeInitResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInitResultsViewController.m; sourceTree = "<group>"; };
 		C290FBC717F48906001DC5E1 /* MercuryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryHelper.h; sourceTree = "<group>"; };
 		C290FBC817F48906001DC5E1 /* MercuryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryHelper.m; sourceTree = "<group>"; };
+		C2A611811A71B052002A4AD0 /* IDTECH_UniMag.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = IDTECH_UniMag.a; sourceTree = "<group>"; };
+		C2A611821A71B052002A4AD0 /* uniMag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uniMag.h; sourceTree = "<group>"; };
 		C2ABB11D17F3387D00B1C3C5 /* SwipeStep1TutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeStep1TutViewController.h; path = ../SwipeStep1TutViewController.h; sourceTree = "<group>"; };
 		C2ABB11E17F3387D00B1C3C5 /* SwipeStep1TutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeStep1TutViewController.m; path = ../SwipeStep1TutViewController.m; sourceTree = "<group>"; };
 		C2ABB12017F33E4D00B1C3C5 /* SwipeVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeVerifyViewController.h; sourceTree = "<group>"; };
@@ -250,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2ABB12A17F3450500B1C3C5 /* MobileCoreServices.framework in Frameworks */,
+				C2A611831A71B052002A4AD0 /* IDTECH_UniMag.a in Frameworks */,
 				4575F2A017F22EA0009C9638 /* AudioToolbox.framework in Frameworks */,
 				4575F2A217F22EA9009C9638 /* AVFoundation.framework in Frameworks */,
 				C241955A17D7860000453F74 /* CoreGraphics.framework in Frameworks */,
@@ -262,7 +263,6 @@
 				C241955617D7860000453F74 /* UIKit.framework in Frameworks */,
 				458BA80017F51C1000F4313C /* libiconv.dylib in Frameworks */,
 				4575F29E17F22E3C009C9638 /* libstdc++.dylib in Frameworks */,
-				4575F2A817F2412F009C9638 /* IDTECH_UniMag.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +272,8 @@
 		4575F2A517F2412F009C9638 /* uniMag-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4575F2A617F2412F009C9638 /* IDTECH_UniMag.a */,
-				4575F2A717F2412F009C9638 /* uniMag.h */,
+				C2A611811A71B052002A4AD0 /* IDTECH_UniMag.a */,
+				C2A611821A71B052002A4AD0 /* uniMag.h */,
 			);
 			name = "uniMag-SDK";
 			path = "HC.POS/uniMag-SDK";
@@ -690,13 +690,12 @@
 				INFOPLIST_FILE = "HC.POS/Shuttle.ObjC-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/HC.POS/magTeck-SDK\"",
 					"\"$(SRCROOT)/HC.POS/uniMag-SDK\"",
-					"\"$(SRCROOT)/HC.POS/ZBarSDK\"",
-					"\"$(SRCROOT)/HC.POS/infinite-SKD\"",
+					"$(PROJECT_DIR)/HC.POS/uniMag-SDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Shuttle.ObjC;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -709,13 +708,12 @@
 				INFOPLIST_FILE = "HC.POS/Shuttle.ObjC-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/HC.POS/magTeck-SDK\"",
 					"\"$(SRCROOT)/HC.POS/uniMag-SDK\"",
-					"\"$(SRCROOT)/HC.POS/ZBarSDK\"",
-					"\"$(SRCROOT)/HC.POS/infinite-SKD\"",
+					"$(PROJECT_DIR)/HC.POS/uniMag-SDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Shuttle.ObjC;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
