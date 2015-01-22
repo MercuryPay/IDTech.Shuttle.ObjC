@@ -1,4 +1,4 @@
-Shuttle.ObjC - IDTECH Shuttle plus Manual Key Entry
+Shuttle.ObjC - IDTECH Shuttle plus Manual Key Entry for iPad
 ============
 Greetings!
 Thank you for requesting the Mobile Starter Kit from Mercury®. We’re very excited to provide you with this hands-on experience to see what mobile payments can do for your business. 
