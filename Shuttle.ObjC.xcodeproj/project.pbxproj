@@ -21,6 +21,7 @@
 		33904DB2192BC3460050AF04 /* displayHCPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 33904DB1192BC3460050AF04 /* displayHCPage.png */; };
 		33904DB4192BCD000050AF04 /* button_step2.png in Resources */ = {isa = PBXBuildFile; fileRef = 33904DB3192BCD000050AF04 /* button_step2.png */; };
 		33904DB6192BECB20050AF04 /* ccSwipeState.png in Resources */ = {isa = PBXBuildFile; fileRef = 33904DB5192BECB20050AF04 /* ccSwipeState.png */; };
+		3A90A9B31A70805B00673055 /* SwipeStep1TutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A90A9B21A70805B00673055 /* SwipeStep1TutViewController.m */; };
 		4575F29E17F22E3C009C9638 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F29D17F22E3C009C9638 /* libstdc++.dylib */; };
 		4575F2A017F22EA0009C9638 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F29F17F22EA0009C9638 /* AudioToolbox.framework */; };
 		4575F2A217F22EA9009C9638 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4575F2A117F22EA9009C9638 /* AVFoundation.framework */; };
@@ -83,7 +84,6 @@
 		C28C4ACD17EA6682007F8375 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C28C4ACC17EA6682007F8375 /* SwipeViewController.m */; };
 		C28C4AD217EB3D6B007F8375 /* SwipeInitResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C28C4AD117EB3D6B007F8375 /* SwipeInitResultsViewController.m */; };
 		C290FBC917F48906001DC5E1 /* MercuryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C290FBC817F48906001DC5E1 /* MercuryHelper.m */; };
-		C2ABB11F17F3387D00B1C3C5 /* SwipeStep1TutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ABB11E17F3387D00B1C3C5 /* SwipeStep1TutViewController.m */; };
 		C2ABB12217F33E4D00B1C3C5 /* SwipeVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ABB12117F33E4D00B1C3C5 /* SwipeVerifyViewController.m */; };
 		C2ABB12A17F3450500B1C3C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ABB12917F3450500B1C3C5 /* MobileCoreServices.framework */; };
 		C2E58AB617DA8B7200FDCA31 /* step1TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E58AB517DA8B7200FDCA31 /* step1TutorialViewController.m */; };
@@ -105,6 +105,8 @@
 		33904DB1192BC3460050AF04 /* displayHCPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = displayHCPage.png; sourceTree = "<group>"; };
 		33904DB3192BCD000050AF04 /* button_step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_step2.png; sourceTree = "<group>"; };
 		33904DB5192BECB20050AF04 /* ccSwipeState.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccSwipeState.png; sourceTree = "<group>"; };
+		3A90A9B11A70805300673055 /* SwipeStep1TutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeStep1TutViewController.h; sourceTree = "<group>"; };
+		3A90A9B21A70805B00673055 /* SwipeStep1TutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeStep1TutViewController.m; sourceTree = "<group>"; };
 		4575F29D17F22E3C009C9638 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		4575F29F17F22EA0009C9638 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4575F2A117F22EA9009C9638 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -234,8 +236,6 @@
 		C28C4AD117EB3D6B007F8375 /* SwipeInitResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInitResultsViewController.m; sourceTree = "<group>"; };
 		C290FBC717F48906001DC5E1 /* MercuryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MercuryHelper.h; sourceTree = "<group>"; };
 		C290FBC817F48906001DC5E1 /* MercuryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MercuryHelper.m; sourceTree = "<group>"; };
-		C2ABB11D17F3387D00B1C3C5 /* SwipeStep1TutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwipeStep1TutViewController.h; path = ../SwipeStep1TutViewController.h; sourceTree = "<group>"; };
-		C2ABB11E17F3387D00B1C3C5 /* SwipeStep1TutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeStep1TutViewController.m; path = ../SwipeStep1TutViewController.m; sourceTree = "<group>"; };
 		C2ABB12017F33E4D00B1C3C5 /* SwipeVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeVerifyViewController.h; sourceTree = "<group>"; };
 		C2ABB12117F33E4D00B1C3C5 /* SwipeVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeVerifyViewController.m; sourceTree = "<group>"; };
 		C2ABB12917F3450500B1C3C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -416,6 +416,8 @@
 		C241955B17D7860000453F74 /* Mercury */ = {
 			isa = PBXGroup;
 			children = (
+				3A90A9B21A70805B00673055 /* SwipeStep1TutViewController.m */,
+				3A90A9B11A70805300673055 /* SwipeStep1TutViewController.h */,
 				C241956417D7860000453F74 /* AppDelegate.h */,
 				C241956517D7860000453F74 /* AppDelegate.m */,
 				C290FBC717F48906001DC5E1 /* MercuryHelper.h */,
@@ -442,8 +444,6 @@
 				C28C4AD117EB3D6B007F8375 /* SwipeInitResultsViewController.m */,
 				C2ABB12017F33E4D00B1C3C5 /* SwipeVerifyViewController.h */,
 				C2ABB12117F33E4D00B1C3C5 /* SwipeVerifyViewController.m */,
-				C2ABB11D17F3387D00B1C3C5 /* SwipeStep1TutViewController.h */,
-				C2ABB11E17F3387D00B1C3C5 /* SwipeStep1TutViewController.m */,
 				C241965417D8089C00453F74 /* ResponseData.h */,
 				C241965517D8089C00453F74 /* ResponseData.m */,
 				C28C4AAD17EA39BF007F8375 /* ReceiptViewController.h */,
@@ -602,7 +602,7 @@
 				C28C4ACD17EA6682007F8375 /* SwipeViewController.m in Sources */,
 				C28C4AD217EB3D6B007F8375 /* SwipeInitResultsViewController.m in Sources */,
 				4575F2AB17F288F2009C9638 /* EncryptedSwipeData.m in Sources */,
-				C2ABB11F17F3387D00B1C3C5 /* SwipeStep1TutViewController.m in Sources */,
+				3A90A9B31A70805B00673055 /* SwipeStep1TutViewController.m in Sources */,
 				C2ABB12217F33E4D00B1C3C5 /* SwipeVerifyViewController.m in Sources */,
 				C290FBC917F48906001DC5E1 /* MercuryHelper.m in Sources */,
 			);
