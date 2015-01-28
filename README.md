@@ -11,7 +11,7 @@ IDTech.Shuttle.ObjC
 
 This is a sample Xcode iOS application demonstrating the capture of an encrypted credit card swipe from an IDTECH device and then processing a test transaction through the Mercury SOAP WebServices platform.
 
->There are 3 steps to this process
+>There are 6 steps to this process
 
 ##Step 1: Retrieve the IDTECH sdk from the IDTECH site.  Please contact your Integration Team member for more details.
 
